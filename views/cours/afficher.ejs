@@ -9,7 +9,12 @@
 <body>
   <h1><%= cours.nom %></h1>
   <ul>
-    <li></li>
+    <li>Professeur: <%= cours.professeur%></li>
   </ul>
+  <a href="/cours">Retour a la liste des cours</a><br>
+  <a href="/cours/<%= cours._id %>/modifier">Modifier le cour</a>
+  <form action="/cours/<%=cours._id %>?_method=DELETE" method="post">
+    <button>Supprimer</button>
+  </form>
 </body>
 </html>

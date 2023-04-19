@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modifier un cours</title>
+</head>
+<body>
+  <h1> Modifier le cour : <%=cours.nom %></h1>
+  <form action="/cours/<%=cours._id %>?_method=PUT" method="post">
+    <label for="nom">Nom du cours</label><br>
+    <input type="text" name="nom" id="nom" placeholder="Entrez le nom du cours a modifier" value="<%= cours.nom %>">
+    <button>Enregistrer</button><br>
+    <br>
+    <a href="/cours">Tout les cours</a>
+  </form>
+</body>
+</html>

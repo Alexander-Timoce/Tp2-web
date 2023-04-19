@@ -5,9 +5,7 @@ const professeursSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-
 })
-
 
 const Professeurs = mongoose.model('Cours', professeursSchema)
 module.exports = Professeurs;

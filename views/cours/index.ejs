@@ -9,6 +9,10 @@
 <body>
   <h1>Tout les cours</h1>
   <ul>
+      <% for(let cour of cours) { %>
+        <li><a href="/cours/<%=cour._id %>"><%=  cour.nom %></a> </li>
+        <% } %>
   </ul>
+  <a href="/cours/nouveau">Ajouter un cour a la liste des cours</a>
 </body>
 </html>
